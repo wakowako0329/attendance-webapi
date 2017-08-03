@@ -1,0 +1,42 @@
+﻿@model WebServiceHandler.Models.AttendanceCheckLogs
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AttendanceCheckLogs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttendanceID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttendanceID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogDateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LogID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

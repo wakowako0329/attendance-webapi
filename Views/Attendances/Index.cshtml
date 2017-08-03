@@ -1,0 +1,93 @@
+﻿@model IEnumerable<WebServiceHandler.Models.Attendance>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SchedID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FacultyID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Check3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remark)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateChecked)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeChecked1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeChecked2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeChecked3)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SchedID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FacultyID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Check3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remark)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateChecked)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeChecked1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeChecked2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeChecked3)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

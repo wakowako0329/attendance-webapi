@@ -1,0 +1,106 @@
+﻿@model WebServiceHandler.Models.Attendance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Attendance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SchedID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchedID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FacultyID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FacultyID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Check1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Check1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Check2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Check2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Check3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Check3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remark)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remark)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChecked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChecked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeChecked1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeChecked1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeChecked2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeChecked2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeChecked3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeChecked3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
